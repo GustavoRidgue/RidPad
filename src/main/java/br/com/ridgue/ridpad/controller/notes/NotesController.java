@@ -11,4 +11,9 @@ public class NotesController {
     public String myNotes() {
         return "notes/mynotes";
     }
+
+    @GetMapping("details")
+    public String details() {
+        return "notes/details";
+    }
 }
