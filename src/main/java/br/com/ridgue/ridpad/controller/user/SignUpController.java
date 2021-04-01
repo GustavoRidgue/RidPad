@@ -5,14 +5,14 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
-public class LoginController {
-    @GetMapping("login")
+public class SignUpController {
+    @GetMapping("sign_up")
     public String login() {
-        return "user/login";
+        return "user/signup";
     }
 
-    @PostMapping("logged")
+    @PostMapping("signed_up")
     public String details() {
-        return "redirect:home";
+        return "redirect:login";
     }
 }
