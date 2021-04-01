@@ -4,9 +4,9 @@
 <header>
     <section>
         <div>
-            <nav class="navbar navbar-expand-md navbar-dark bg-verydark sticky-top pe-1 ps-1 mb-5">
+            <nav class="navbar navbar-expand-md navbar-dark bg-verydark sticky-top pe-1 ps-1 mb-4">
                 <div class="container-fluid">
-                    <a class="navbar-brand text-cursive" href="#">RidPad</a>
+                    <a class="navbar-brand text-cursive" th:href="@{/home}">RidPad</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -35,7 +35,7 @@
 <body class="bg-dark">
 <section>
     <div class="container">
-        <div class="row justify-content-center mt-5">
+        <div class="row justify-content-center mb-2">
             <div class="col-10 mt-4 bg-verydark card">
                 <div class="card-header border-0 bg-verydark mt-2">
                     <a th:href="@{/notes/my_notes/details}" class="card-title text-light fs-5 text-decoration-none lh-1">Title: Authentication through Spring API</a>
@@ -63,7 +63,6 @@
                 </div>
             </div>
         </div>
-
         <div class="text-center mt-4">
             <a th:href="@{/notes/my_notes}" class="btn btn-outline-warning me-1">Go Back</a>
             <a th:href="@{/notes/my_notes/alter}" class="btn btn-warning ms-1">Alter Note</a>
